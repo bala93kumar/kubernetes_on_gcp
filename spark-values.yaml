@@ -1,0 +1,7 @@
+
+controller:
+  namespaces:
+    - data
+
+webhook:
+  enable: true
