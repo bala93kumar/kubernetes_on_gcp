@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: curl-pod
+spec:
+  containers:
+    - name: curl
+      image: curlimages/curl:latest
+      command: ["sleep", "3600"]
+      # This keeps the pod running so you can exec into it and use curl
+      # You can exec into the pod with: kubectl exec -it curl-pod -- sh
